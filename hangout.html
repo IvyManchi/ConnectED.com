@@ -44,6 +44,29 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
+    .library-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.library-card img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .library-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .library-card img {
+        width: 100%;
+    }
+}
+        
  /* Footer */
 
    footer {
@@ -76,7 +99,9 @@ nav a:hover {
 
      <div class="container">
 
-  <div class="card">
+      <div class="card library-card">
+
+  <img src="library.jpg" alt="Howard County Library">
 
     <h2>Howard County Library System</h2>
     <a href="https://hclibrary.org/" target="_blank">Visit Library Website</a>
